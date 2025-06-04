@@ -11,6 +11,11 @@ Convert all the datas in a Unity WebGL Build to js format. So it can be loaded a
     ```
     <Your Unity Project>/Assets/WebGLTemplates/<Your Template>/TemplateData/fetch.js
     ```
+   Edit the `index.html` file in your WebGL Template, add the following line to the `<head>` element:
+   ```
+   <script src ="TemplateData/fetch.js"></script>
+   ```
+   Make sure the path mathes.
  - Build player from Unity Editor, set the output directory name to `WebGL`. The `Compression Format` **MUST** be `Disabled`.
  - Copy the `convert-webgl.go` to the parent directory of the player build `WebGL` in last step. Run `go run .` in that path.
    Or else using the pre-compiled binary (for example `convert-webgl.go.exe` for windows) to that path and run.
