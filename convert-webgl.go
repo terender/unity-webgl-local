@@ -34,8 +34,9 @@ func main() {
 		assetPath := strings.TrimPrefix(srcFilePath, SRCDIR)
 		dstFilePath := DSTDIR + assetPath
 
-		// Make sure the source path exists
-		err = os.MkdirAll(filepath.Dir(dstFilePath), 0666)
+		// Make sure the destination path exists
+		// Use 0755 so created directories are traversable
+		err = os.MkdirAll(filepath.Dir(dstFilePath), 0755)
 		if err != nil {
 			return err
 		}
