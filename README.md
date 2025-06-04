@@ -6,7 +6,7 @@ Convert all the datas in a Unity WebGL Build to js format. So it can be loaded a
 - Golang 1.20+ is needed if run or build from source code. 
 
 # Usage
- - Make sure you are using customize <a href="https://docs.unity3d.com/2022.3/Documentation/Manual/webgl-templates.html">WebGL Template</a> in Unity WebGL Player Settings.
+ - Make sure you are using customize <a href="https://docs.unity3d.com/2022.3/Documentation/Manual/webgl-templates.html" target="_blank">WebGL Template</a> in Unity WebGL Player Settings.
  - Copy the fetch.js into your WebGL Template directory. For example:
     ```
     <Your Unity Project>/Assets/WebGLTemplates/<Your Template>/TemplateData/fetch.js
